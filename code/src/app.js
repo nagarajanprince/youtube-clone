@@ -14,7 +14,7 @@ class app extends Component {
         const response = await API.get('search', {
         params:{
             part: "snippet",
-            maxResult: 10,
+            maxResults: 50,
             key:'AIzaSyB0Zl6a3zsTP8JEtPk-bKILgPHciO9Tquo',
             q:searchtearm
         }
@@ -44,10 +44,10 @@ this.setState({
                        <Grid item xs={12}>
                             <Searchbar onFormsubmit ={this.handelsubmit}/>
                        </Grid>
-                       <Grid item xs={8}>
+                       <Grid item xs={12}>
                             <Videodetail video={selectVideo}/>
                        </Grid>
-                       <Grid item xs={4} style={{padding:"0 20px"}}>
+                       <Grid item xs={12} style={{padding:"0 20px"}}>
                             <Videolist videos={videos} onvideoselect={this.onvideoselect}/>
                        </Grid>
                    </Grid>
