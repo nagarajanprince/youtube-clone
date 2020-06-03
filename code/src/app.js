@@ -30,6 +30,9 @@ this.setState({
     selectVideo:video
 })
     }
+    componentDidMount(){
+        this.handelsubmit("react framwork")
+    }
     render() {
         const {selectVideo,videos} = this.state
         return (

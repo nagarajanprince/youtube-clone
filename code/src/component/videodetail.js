@@ -10,7 +10,7 @@ const videodetail = ({video}) => {
     console.log(video)
     return (
         <React.Fragment>
-            <Paper elevation={6} style={{height:"70%",margin:"20px 0"}}>
+            <Paper elevation={6} style={{margin:"20px 0"}}>
                 <iframe title="video detail" width="100%" height="500px" src={videourl} />
             </Paper>
             
